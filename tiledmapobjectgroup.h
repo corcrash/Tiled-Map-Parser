@@ -19,6 +19,21 @@ public:
     TiledMapObjectGroup(string name, int width, int height);
     ~TiledMapObjectGroup();
 
+    void setName(string name){ this->name = name; }
+    void setName(char* name){ this->name = name; }
+    void setWidth(int width){ this->width = width; }
+    void setHeight(int height){ this->height = height; }
+    void insertObject(string name, string type, int width, int height, int x, int y)
+    {
+        TiledMapObject* temp = new TiledMapObject(name, type, width, height, x, y);
+
+        this->objects.push_back(temp);
+    }
+    void insertObject(TiledMapObject* object)
+    {
+        this->objects.push_back(object);
+    }
+
     string getName(){ return this->name; }
     int getWidth(){ return this->width; }
     int getHeight(){ return this->height; }

@@ -23,6 +23,7 @@ public:
     int getWidth(){ return this->width; }
     int getHeight(){ return this->height; }
     int getData(int index){ return this->data[index]; }
+    int getDataSize(){ return this->data.size(); }
 
     void setName(string name){ this->name = name; }
     void setName(char* name){ this->name = name; }

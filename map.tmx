@@ -3,6 +3,9 @@
  <tileset firstgid="1" name="Tiles" tilewidth="16" tileheight="16">
   <image source="../../../Downloads/GfxLib/Backgrounds/lev03_siberia/area03_tileset/area03_level_tiles.png" trans="ff00ff" width="640" height="480"/>
  </tileset>
+ <tileset firstgid="1201" name="Tileset2" tilewidth="16" tileheight="16">
+  <image source="../../../Downloads/GfxLib/Backgrounds/lev04_candy/area04_tileset/area04_level_tiles.png" trans="ff00ff" width="400" height="400"/>
+ </tileset>
  <layer name="Back" width="32" height="32">
   <data>
    <tile gid="0"/>

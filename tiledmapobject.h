@@ -48,7 +48,15 @@ public:
     void setHeight(int height){ this->height = height; }
     void setX(int x){ this->x = x; }
     void setY(int y){ this->y = y; }
-    void insertProperty(string property, string value){ TiledMapObjectProperty temp(property, value); this->properties.push_back(&temp); }
+    void insertProperty(string property, string value)
+    {
+        TiledMapObjectProperty* temp = new TiledMapObjectProperty(property, value);
+        this->properties.push_back(temp);
+    }
+    void insertProperty(TiledMapObjectProperty* property)
+    {
+        this->properties.push_back(property);
+    }
 
 };
 
